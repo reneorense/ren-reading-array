@@ -15,3 +15,6 @@ Local Chromium, offline snapshot: 1440×900, 390×844, 320×740 and 873×393 —
 
 ## 2.2 selection tests
 Five mocked JavaScript API tests passed: current representative IDs, expansion, duplicate pagination, excluded posts, failed feed rejection. Live API/CORS and new-version browser tests remain unverified. Historical tests above are for earlier versions.
+
+## Reader-first discovery drawer
+Isolated local Chromium component tests passed at 320×740, 390×844, 873×393 and 1440×900: open, focus, Escape, close, reopen, correct destination, departure state, no horizontal overflow, no page errors. Reduced-motion animation suppression passed. External navigation and full deployed page browser integration remain unverified. Existing app.js and feed.mjs unchanged.
