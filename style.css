@@ -15,3 +15,6 @@
 
 .array .monitor[aria-hidden="true"]{opacity:0;visibility:hidden;pointer-events:none}
 .channel b{text-align:right;overflow-wrap:anywhere}
+
+/* Reader-first introduction (2.2.1) */
+.intro{display:block;margin-top:clamp(20px,4vw,42px)}.intro .eyebrow{margin:0 0 9px;letter-spacing:.16em}.intro h1{font-size:clamp(34px,6.3vw,72px)}.intro .sub{max-width:52ch;margin:12px 0 0;line-height:1.5}.story-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 12px}.story-toolbar #status{margin:0;min-width:0;font:13px/1.4 system-ui,sans-serif;color:var(--muted);letter-spacing:0}.story-toolbar #status::before{content:"";display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:var(--mint)}.story-toolbar #refresh{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-shrink:0;min-height:44px;padding:8px 12px;font-size:12px}.story-toolbar #refresh:disabled{opacity:.55;cursor:wait}@media(max-width:620px){header{padding:8px 0 14px}.intro{margin-top:20px}.intro .sub{font-size:14px}.story-toolbar{margin:12px 0 9px}}
