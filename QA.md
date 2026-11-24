@@ -12,3 +12,6 @@ Browser navigation was blocked by administrator policy, so HTML, CSS and JS were
 # Version 2.1 cover flow regression checks
 
 Local Chromium, offline snapshot: 1440×900, 390×844, 320×740 and 873×393 — PASS: five items, arrow navigation, circular wraparound, dot selection, keyboard navigation, mouse drag, flat mode, no horizontal overflow, no uncaught JS errors. Simulated touchscreen at 390×844 — PASS: horizontal swipe, neighboring monitor tap, selected article zoom initiation with correct destination. A touch pointer-capture bug was found, fixed, and retested. Network, live artwork, external navigation, actual WebGL, Safari and physical-device behavior remain unverified. Prior 2.0 results above are historical, not 2.1 certification.
+
+## 2.2 selection tests
+Five mocked JavaScript API tests passed: current representative IDs, expansion, duplicate pagination, excluded posts, failed feed rejection. Live API/CORS and new-version browser tests remain unverified. Historical tests above are for earlier versions.
