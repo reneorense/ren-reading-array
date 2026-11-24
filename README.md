@@ -1,4 +1,4 @@
-# REN Afterhours Reading Array 2.0 — prototype
+# REN Afterhours Reading Array 2.1 — cover flow prototype
 
 Static, zero-cost, responsive article gallery. CSS perspective monitors and optional Three.js WebGL decorative geometry. The actual articles remain accessible HTML links, not textures on WebGL meshes. Live feed uses the public WordPress.com REST API; five verified article links are included as an explicitly dated fallback snapshot. The Scrib snapshot has a neutral placeholder because the media filename returned by WordPress appears to belong to a different tool; editorial review is needed. No API keys or credentials.
 
@@ -10,3 +10,6 @@ Three.js r180 / npm 0.180.0, including RoundedBoxGeometry, MIT: https://github.c
 
 ## Verification
 Run `python -m http.server 8000` here, then visit `http://localhost:8000`. The local browser test uses mocked fixture data and simulated image failures (network unavailable). It does not certify live API CORS, actual external images, WebGL dependency loading, device GPU performance, or deployment. See QA.md for executed results. Preview is noindex to avoid competing with WordPress in search.
+
+## 2.1 interaction
+Manual circular carousel, drag and touch swipe, side tap to select, center tap to open, arrow and dot controls, keyboard navigation, and flat list fallback. No auto-advance. The carousel uses CSS 3D transforms and optional Three.js decoration. See QA.md for current local checks. The older test_browser.py targets 2.0; its assertions about grid layout and reduced-motion transform are not current.
